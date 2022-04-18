@@ -1,0 +1,163 @@
+
+
+
+body {
+   background-color: #CE8D66;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #6A8D73;
+    border: 10px solid white;
+}
+
+nav {
+    display: flex;
+    padding: 0;
+}
+
+.cabecalho-item {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cabecalho-item:hover {
+    color: blue;
+}
+
+.dinofauro {
+    width: 90px;
+}
+
+main {
+    background-color: #ffffffff;
+    box-shadow: 5px 5px 10px black;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    width: 700px;
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+main > p {
+    margin: 0;
+}
+
+.principal {
+    background-color: #f4fffde0;
+    height: 200px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #523A34;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: underline white double;
+}
+
+.aaaa {
+    color: black;
+}
+
+.magica {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 250px;
+    background-color: #161616;
+    display: inline-block;
+    padding: 3px;
+    border: white;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 3px;
+    border: 5px;
+    border-color: white;
+}
+
+.magica:hover {
+    background-color: brown;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #523A34;
+    font-weight: lighter;
+}
+
+.magica:active {
+    background-color: goldenrod;
+    color: #161616;
+}
+
+.magica > p {
+    display: none;
+}
+
+.magica:active > p {
+    display: block;
+}
+
+
+.hackeado {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.cliqueaquilink {
+    text-decoration: none;
+    color: brown;
+}
+
+.cliqueaquilink:hover {
+    color: blue;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.cliqueaquilink::after {
+    content: " [link]";
+    color: darkgray;
+    text-decoration: none;
+}
+
+.vcfoihackeado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    color: brown;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+

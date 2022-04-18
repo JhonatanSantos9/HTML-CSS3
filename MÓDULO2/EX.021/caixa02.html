@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: darkblue;
+            padding: 4px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 40px;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: darkgray;
+        }
+
+        footer {
+            background-color: #161616;
+            color: white;
+            text-align: center;
+            padding: 4pxpx;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;    
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            
+        </nav>
+    </header>
+
+        <main>
+            <h2>Textos principais</h2>
+            <section>
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis dolorem ad in nesciunt assumenda, similique ipsam ducimus odit, officia magnam doloremque placeat quas, reprehenderit amet. Maxime doloribus aut assumenda!</p>
+                    <aside>Feito por n sei quem</aside>
+                </article>
+            </section>
+        </main>
+
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+
+    <div class="circle">
+
+    </div>
+
+    
+</body>
+</html>

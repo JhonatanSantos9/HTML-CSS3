@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+
+    <style>
+
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px dashed black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>STRETCH</h1>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>CENTER</h1>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>FLEX-START</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>FLEX-END</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>AROUND</h1>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+
+    <h1>CENTER</h1>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet consectetur,onem temporibus maxime asperiores?</div>
+        <div class="item">akjbhgfuahgweliawenfklashgfpi9a</div>
+        <div class="item">Lorem ipsum dolor, sit amet consect
+            
+            ores? Architecto!</div>
+        <div class="item">numero4</div>
+        <div class="item">bla bla dsjfgaeiwp~kd0pioko</div>
+        <div class="item">6</div>
+    </div>
+    
+</body>
+</html>
