@@ -59,6 +59,10 @@ section{
     font-size: 4.5vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 .normal{
     background-color: white;
     color: black;
@@ -73,6 +77,14 @@ section.imagem > p{
     padding: 7px;
     display: inline-block;
     background-color: rgb(27, 27, 27);
+}
+
+#img01{
+    background-image: url('../imagens/._background002.jpg');
+}
+
+#img02{
+    background-image: url('../imagens/._background001.jpg');
 }
 
 footer{
