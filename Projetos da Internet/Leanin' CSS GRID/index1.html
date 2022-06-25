@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            */
+            grid-gap: 1em;
+        }
+
+        .gridcontainer > div{
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        .gridcontainer > div:nth-child(odd){
+            background-color: #ddd;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div>
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore nisi harum labore ullam provident laborum, placeat ducimus vel sint consequatur velit, vitae inventore cumque perferendis delectus ipsa obcaecati officia tempora! Iure beatae corrupti ullam alias deserunt atque sapiente corporis quis enim rem eligendi numquam dolor quibusdam provident laborum, accusantium pariatur quia quidem nisi sequi totam! Enim perferendis, facere magni, repellat veniam ut repellendus reprehenderit nemo facilis dolores quae vitae officia aliquid adipisci ex possimus quidem itaque tenetur. Delectus, dicta!
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sit commodi perferendis accusantium, eaque odio ea obcaecati, veritatis numquam est ullam, at nihil quod cupiditate dolorem vitae soluta. Blanditiis, ab!
+        </div>
+
+        <div>
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore nisi harum labore ullam provident laborum, placeat ducimus vel sint consequatur velit, vitae inventore cumque perferendis delectus ipsa obcaecati officia tempora! Iure beatae corrupti ullam alias deserunt atque sapiente corporis quis enim rem eligendi numquam dolor quibusdam provident laborum, accusantium pariatur quia quidem nisi sequi totam! Enim perferendis, facere magni, repellat veniam ut repellendus reprehenderit nemo facilis dolores quae vitae officia aliquid adipisci ex possimus quidem itaque tenetur. Delectus, dicta!
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sit commodi perferendis accusantium, eaque odio ea obcaecati, veritatis numquam est ullam, at nihil quod cupiditate dolorem vitae soluta. Blanditiis, ab!
+        </div>
+    </div>
+    
+    
+</body>
+</html>
