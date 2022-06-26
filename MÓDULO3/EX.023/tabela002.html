@@ -20,13 +20,29 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(172, 226, 208);
+        }
+
         thead, th{
             background-color: gray;
             color: white;
         }
 
+        thead > tr > th{
+            
+        }
+
         .num{
             text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+            font-weight: bold;
         }
 
 
@@ -37,6 +53,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,8 +65,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -69,11 +86,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>00000</strong></td>
             </tr>
 
         </tfoot>
+        <caption>Pé</caption>
     </table>
     
 </body>
