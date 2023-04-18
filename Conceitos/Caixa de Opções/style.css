@@ -1,0 +1,49 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    height: 150px;
+    background-color: rgb(48, 15, 15);
+}
+
+.container1 > p{
+    color: white;
+    font-size: 20px;
+    font-family: Sarabun;
+    margin-bottom: 5px;
+}
+
+.container-filho-cx1{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-opcs-cx1{
+    width: 85%;
+    height: 25px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
