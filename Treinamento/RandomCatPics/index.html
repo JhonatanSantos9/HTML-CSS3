@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body onload="exibirImagemAleatoria()">
+    <img id="catImage1" src="#" alt="Foto do gato fofinha e aleatória >>>aqui<<<">
+    <img id="catImage2" src="#" alt="Foto do gato fofinha e aleatória >>>aqui<<<">
+    <img id="catImage3" src="#" alt="Foto do gato fofinha e aleatória >>>aqui<<<">
+
+    <script>
+        function exibirImagemAleatoria(idImagem) {
+            const catImage = document.querySelector('#' + idImagem);
+            fetch('https://api.thecatapi.com/v1/images/search')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    const imageUrl = data[0].url;
+                    catImage.src = imageUrl;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
+
+        exibirImagemAleatoria('catImage1');
+        exibirImagemAleatoria('catImage2');
+        exibirImagemAleatoria('catImage3');
+
+        /*const catImages = document.querySelectorAll('img');
+        fetch('https://api.thecatapi.com/v1/images/search')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                const imageUrl = data[0].url;
+                catImages.forEach(function(img) {
+                    img.src = imageUrl;
+                });
+            })
+            .catch(function(error) {
+                console.log(error);
+            });*/
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+   <style>
+        .slide-container {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide-item {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+   </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-item">Slide 1</div>
+        <div class="slide-item">Slide 2</div>
+        <div class="slide-item">Slide 3</div>
+    </div>
+
+    <script>
+        const slideContainer = document.querySelector('.slide-container');
+        const slideItems = document.querySelectorAll('.slide-item');
+        const slideCount = slideItems.length;
+        const slideWidth = slideContainer.offsetWidth / 3;
+
+        let currentIndex = 0;
+
+        function slide() {
+        slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+        if (currentIndex === slideCount - 3) {
+            currentIndex = 0;
+        } else {
+            currentIndex++;
+        }
+        slide();
+        }
+
+        setInterval(nextSlide, 2000);
+
+    </script>
+</body>
+</html>
