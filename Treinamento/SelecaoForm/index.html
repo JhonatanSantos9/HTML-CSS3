@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    select {
+        background-color: #f5f5f5;
+        color: #333;
+        font-size: 16px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+</style>
+
+<body id="my-body">
+    <label for="frutas">Selecione uma fruta:</label>
+
+    <select id="frutas" name="frutas">
+        <option value="" selected>-- Selecione uma fruta --</option>
+        <option value="laranja">Laranja</option>
+        <option value="maça">Maçã</option>
+        <option value="uva">Uva</option>
+        <option value="banana">Banana</option>
+    </select>
+
+    
+    <script>
+        let select = document.querySelector('#frutas')
+        let body = document.querySelector('#my-body')
+
+        select.addEventListener('change', function () {
+            let selectedFruit = select.value
+            if (selectedFruit == 'maça') {
+                body.style.background = 'red'
+            } else if (selectedFruit == 'uva') {
+                body.style.background = 'purple'
+                setTimeout(() => {
+                    alert('Uva é a fruta do outono')
+                }, 200);
+            } else if (selectedFruit == 'banana') {
+                body.style.background = 'yellow'
+            } else if (selectedFruit == 'laranja') {
+                body.style.background = 'orange'
+            } else {
+                body.style.background = 'white'
+            }
+        })
+
+    </script>
+</body>
+
+</html>
