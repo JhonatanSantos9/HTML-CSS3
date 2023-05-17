@@ -9,7 +9,7 @@ function horacompleta(){
     horas.innerHTML = new Intl.DateTimeFormat('pt-Br', {
         timeStyle: "long"
     }).format(newdate)
-    setTimeout('horacompleta()', 500)
+    setInterval('horacompleta()', 500)
 }
 
 function datacompleta(){
@@ -18,5 +18,5 @@ function datacompleta(){
     horas.innerHTML = new Intl.DateTimeFormat('pt-Br', {
         dateStyle: "long"
     }).format(newdate)
-    setTimeout('horacompleta()', 500)
+    setInterval('horacompleta()', 500)
 }
